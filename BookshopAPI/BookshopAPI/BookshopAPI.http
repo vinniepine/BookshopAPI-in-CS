@@ -1,0 +1,26 @@
+@BookStoreApi_HostAddress = http://localhost:5167
+
+### Listar todos os livros
+GET {{BookStoreApi_HostAddress}}/api/books
+Accept: application/json
+
+###
+
+### Criar um novo livro
+POST {{BookStoreApi_HostAddress}}/api/books
+Content-Type: application/json
+Accept: application/json
+
+{
+  "title": "Dom Casmurro",
+  "author": "Machado de Assis",
+  "genre": "romance",
+  "price": 39.90,
+  "stock": 10
+}
+
+###
+
+### Buscar livro por ID (substitua pelo GUID real)
+GET {{BookStoreApi_HostAddress}}/api/books/00000000-0000-0000-0000-000000000000
+Accept: application/json
